@@ -9,8 +9,8 @@ body {
 /* Estilos del encabezado */
 
 header {
-  background-color: #24555A;
-  color: #F8F0E0;
+  background-color: #f8f0e0;
+  color: #25565b;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +18,7 @@ header {
 }
 
 .logo img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -34,12 +34,12 @@ nav li {
 }
 
 nav a {
-  color: #F8F0E0;
+  color: #25565b;
   text-decoration: none;
 }
 
 nav a:hover {
-  color: #ff0;
+  color: #c5374c;
 }
 
 /* Estilos del banner con carrusel */
