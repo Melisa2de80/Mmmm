@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    color-verde: #24555A;
+    Color-rojo: #C5354B;
+    Color-Chocolate: #452213;
+    Color-ddl: #AE834D;
+    Color-crema: #F8F0E0;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+    margin: auto;
+    gap: 10px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.weight-400 {
+    font-weight: 400;
+}
+
+.weight-600 {
+    font-weight: 600;
+}
+
+.parrafo {
+    margin-bottom: 20px;
+}
+
+.header {
+    height: 500px;
+    background-image: url(img/Fondo-seccion-gustos-6.jpg);
+}
+
+.img-hero {
+    width: 100%;
+    height: auto;
+    grid-columns: 9/13;
+}
+
+.img {
+    width: 95%;
+    max-width: 400px;
+}
+
+.textos-hero {
+    grid-column: 1/7;
+    padding-right: 10px;
+}
+
+.textos-hero p {
+    text-align: left;
+}
+
+.cta {
+    width: 130px;
+    background: #24555A;
+    color: #F8F0E0;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+
+.menu-nav {
+    background-color: #f8f0e0;
+    color: #25565b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.logo img {
+    max-width: 80%;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #25565b;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c5374c;
+}
+
+
+
+/* HEADER */
+
+.productos {
+    height: 370px;
+    background: linear-gradient(180deg, #ffffff 50%, #C5354B 50%);
+}
+
+.items {
+    grid-column: 1/-1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 30%;
+    background: #F8F0E0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    height: 220px;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+[class^="far fa"] {
+    font-size: 50px;
+}
+
+.titulo-productos {
+    margin: 20px 0;
+}
+
+/* About us */
+
+.sucursales {
+    background: #C5354B;
+    color: #F8F0E0;
+    height: auto;
+    padding-bottom: 60px;
+}
+
+.textos-sucursales {
+    grid-column: 1/-1;
+    text-align: center;
+
+}
+
+.textos-sucursales .parrafo {
+    margin-top: 10px;
+    color: #452213;
+}
+
+.numbers {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.number {
+    text-align: center;
+    font-size: 30px;
+    width: 22%;
+}
+
+/* MISSION */
+.empresa {
+    padding: 80px 0;
+   
+}
+
+.textos-empresa {
+    grid-column: 7/13;
+    grid-row: 1/-1;
+    margin-bottom: 20px;
+}
+
+.texto-empresa {
+    grid-column: 7/13;
+    grid-row: 1/-1;
+    margin-bottom: 20px;
+} 
+
+.img-empresa {
+    grid-column: 1/7;
+    grid-row: 1/-1;
+}
+
+/* Footer */
+footer {
+    background: #24555A;
+    color: #F8F0E0;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.textos-footer {
+    grid-column: 1/-1;
+}
+
+[class^="footer-item"] a {
+    color: #F8F0E0;
+    font-size: 30px;
+}
+
+[class^="footer-item"] {
+    grid-column: span 3;
+}
+
+
+@media screen and (max-width:800px) {
+    .header {
+        height: auto;
+    }
+
+    .grid {
+        gap: 30px;
+    }
+
+    .img-hero,
+    .textos-hero {
+        grid-column: 1/-1;
+    }
+
+    .img-hero {
+        text-align: center;
+    }
+
+    .textos-hero {
+        margin: 40px;
+    }
+
+    .productos {
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .item {
+        width: 90%;
+        margin: 40px 0;
+        height: auto;
+        padding: 40px;
+    }
+
+    .img-mission {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        text-align: center;
+    }
+
+    .textos-mission {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        align-self: center;
+    }
+
+}
+
+
+@media screen and (max-width:400px) {
+        .img {
+            max-width: 170px;
+        }
+
+        .grid {
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        }
+
+        .item {
+            width: 90%;
+            flex-shrink: 0;
+        }
+
+        .number {
+            width: 55%;
+            border-bottom: 1px dotted #AE834D;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+        }
+
+        .textos-mission h3 {
+            margin:15px;
+        }
+
+        [class^="footer-item"] {
+            grid-column: 1/-1;
+        }
+    }
