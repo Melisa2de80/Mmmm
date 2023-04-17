@@ -13,7 +13,25 @@ body {
     Color-crema: #F8F0E0;
 }
 
+.flex_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end
+}
 
+.flex_menu li ul {
+    display:none;
+    position:absolute;
+}
+
+.flex_menu li a:hover {
+    /* background-color:#f8ede0; */
+    color:#452213
+}
+.flex_menu li:hover > ul {
+    display:flex;
+    flex-direction: column;
+}
 
 .grid {
     display: grid;
