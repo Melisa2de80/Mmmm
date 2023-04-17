@@ -20,16 +20,17 @@ body {
 }
 
 .flex_menu li ul {
-    display:none;
-    position:absolute;
+    display: none;
+    position: absolute;
 }
 
 .flex_menu li a:hover {
     /* background-color:#f8ede0; */
-    color:#452213
+    color: #452213
 }
-.flex_menu li:hover > ul {
-    display:flex;
+
+.flex_menu li:hover>ul {
+    display: flex;
     flex-direction: column;
 }
 
@@ -55,6 +56,7 @@ body {
 
 .parrafo {
     margin-bottom: 20px;
+
 }
 
 .header {
@@ -74,7 +76,7 @@ body {
 }
 
 .textos-hero {
-    grid-column: 1/7;
+    grid-column: 1/9;
     padding-right: 10px;
 }
 
@@ -101,6 +103,28 @@ body {
     align-items: center;
     padding: 20px;
 }
+
+.logo-giro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin-right: 15px;
+    animation: spin 5s linear infinite;
+    /* ajusta la duración y el tipo de animación */
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 
 .logo img {
@@ -182,7 +206,7 @@ nav a:hover {
 
 .textos-sucursales .parrafo {
     margin-top: 10px;
-    color: #452213;
+    color: #F8F0E0;
 }
 
 .numbers {
@@ -194,27 +218,28 @@ nav a:hover {
 
 .number {
     text-align: center;
-    font-size: 30px;
+    font-size: 45px;
     width: 22%;
 }
 
 /* MISSION */
 .empresa {
     padding: 80px 0;
-   
+
 }
 
 .textos-empresa {
     grid-column: 7/13;
     grid-row: 1/-1;
     margin-bottom: 20px;
+    color: #452213;
 }
 
 .texto-empresa {
     grid-column: 7/13;
     grid-row: 1/-1;
     margin-bottom: 20px;
-} 
+}
 
 .img-empresa {
     grid-column: 1/7;
@@ -293,31 +318,31 @@ footer {
 
 
 @media screen and (max-width:400px) {
-        .img {
-            max-width: 170px;
-        }
-
-        .grid {
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        }
-
-        .item {
-            width: 90%;
-            flex-shrink: 0;
-        }
-
-        .number {
-            width: 55%;
-            border-bottom: 1px dotted #AE834D;
-            margin-bottom: 20px;
-            padding-bottom: 5px;
-        }
-
-        .textos-mission h3 {
-            margin:15px;
-        }
-
-        [class^="footer-item"] {
-            grid-column: 1/-1;
-        }
+    .img {
+        max-width: 170px;
     }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .item {
+        width: 90%;
+        flex-shrink: 0;
+    }
+
+    .number {
+        width: 55%;
+        border-bottom: 1px dotted #AE834D;
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+    }
+
+    .textos-mission h3 {
+        margin: 15px;
+    }
+
+    [class^="footer-item"] {
+        grid-column: 1/-1;
+    }
+}
