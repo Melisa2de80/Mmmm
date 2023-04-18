@@ -61,22 +61,27 @@ body {
 
 .header {
     height: 500px;
-    background-image: url(img/Fondo-seccion-gustos-6.jpg);
+    background-color: #AE834D;
+    background-image:url(img/banner4.jpg);
+    
 }
 
 .img-hero {
     width: 100%;
     height: auto;
-    grid-columns: 9/13;
+    grid-column: 9/13;
+   
+    
 }
 
 .img {
     width: 95%;
     max-width: 400px;
+   
 }
 
 .textos-hero {
-    grid-column: 1/9;
+    grid-column: 1/8;
     padding-right: 10px;
 }
 
@@ -207,6 +212,7 @@ nav a:hover {
 .textos-sucursales .parrafo {
     margin-top: 10px;
     color: #F8F0E0;
+    font-size: 1rem;
 }
 
 .numbers {
@@ -218,15 +224,22 @@ nav a:hover {
 
 .number {
     text-align: center;
-    font-size: 45px;
+    font-size: 25px;
     width: 22%;
 }
 
 /* MISSION */
+
+.empresa-01 {
+   
+    background-image: url(img/Fondo-seccion-gustos-6.jpg);
+}
+
 .empresa {
     padding: 80px 0;
-
+  
 }
+
 
 .textos-empresa {
     grid-column: 7/13;
@@ -261,12 +274,40 @@ footer {
 [class^="footer-item"] a {
     color: #F8F0E0;
     font-size: 30px;
+    
 }
 
 [class^="footer-item"] {
     grid-column: span 3;
 }
 
+
+
+.item:hover{
+    animation: tada;
+    animation-duration: 1s;
+}
+
+.footer-item1:hover{
+    animation: tada;
+    animation-duration: 1s;
+}
+
+.footer-item2:hover{
+    animation: tada;
+    animation-duration: 1s;
+}
+
+.footer-item3:hover{
+    animation: tada;
+    animation-duration: 1s;
+    color: #C5354B;
+}
+
+.footer-item4:hover{
+    animation: tada;
+    animation-duration: 1s;
+}
 
 @media screen and (max-width:800px) {
     .header {
