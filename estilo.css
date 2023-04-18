@@ -62,22 +62,22 @@ body {
 .header {
     height: 500px;
     background-color: #AE834D;
-    background-image:url(img/banner4.jpg);
-    
+    background-image: url(img/banner4.jpg);
+
 }
 
 .img-hero {
     width: 100%;
     height: auto;
     grid-column: 9/13;
-   
-    
+
+
 }
 
 .img {
     width: 95%;
     max-width: 400px;
-   
+
 }
 
 .textos-hero {
@@ -162,7 +162,7 @@ nav a:hover {
 /* HEADER */
 
 .productos {
-    height: 370px;
+    height: 550px;
     background: linear-gradient(180deg, #ffffff 50%, #C5354B 50%);
 }
 
@@ -181,7 +181,7 @@ nav a:hover {
     background: #F8F0E0;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    height: 220px;
+    height: 380px;
     padding: 20px 10px;
     text-align: center;
 }
@@ -231,13 +231,13 @@ nav a:hover {
 /* MISSION */
 
 .empresa-01 {
-   
+
     background-image: url(img/Fondo-seccion-gustos-6.jpg);
 }
 
 .empresa {
     padding: 80px 0;
-  
+
 }
 
 
@@ -274,7 +274,7 @@ footer {
 [class^="footer-item"] a {
     color: #F8F0E0;
     font-size: 30px;
-    
+
 }
 
 [class^="footer-item"] {
@@ -283,28 +283,28 @@ footer {
 
 
 
-.item:hover{
+.item:hover {
     animation: tada;
     animation-duration: 1s;
 }
 
-.footer-item1:hover{
+.footer-item1:hover {
     animation: tada;
     animation-duration: 1s;
 }
 
-.footer-item2:hover{
+.footer-item2:hover {
     animation: tada;
     animation-duration: 1s;
 }
 
-.footer-item3:hover{
+.footer-item3:hover {
     animation: tada;
     animation-duration: 1s;
     color: #C5354B;
 }
 
-.footer-item4:hover{
+.footer-item4:hover {
     animation: tada;
     animation-duration: 1s;
 }
@@ -329,6 +329,7 @@ footer {
 
     .textos-hero {
         margin: 40px;
+        font-size: 1rem;
     }
 
     .productos {
@@ -343,13 +344,13 @@ footer {
         padding: 40px;
     }
 
-    .img-mission {
+    .img-empresa {
         grid-column: 1/-1;
         grid-row: 2/3;
         text-align: center;
     }
 
-    .textos-mission {
+    .textos-empresa {
         grid-column: 1/-1;
         grid-row: 1/2;
         align-self: center;
@@ -379,11 +380,19 @@ footer {
         padding-bottom: 5px;
     }
 
-    .textos-mission h3 {
+    .textos-empresa h3 {
         margin: 15px;
     }
 
     [class^="footer-item"] {
         grid-column: 1/-1;
+    }
+
+    .textos-hero {
+        font-size: 0.8rem;
+    }
+
+    .textos-empresa h3 {
+        margin: 0px;
     }
 }
